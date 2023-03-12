@@ -1,0 +1,42 @@
+.root {
+    height: 100%;
+    position: relative;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: end;
+}
+
+.circle {
+    height: 15%;
+    width: fit-content;
+    position: absolute;
+}
+
+.topCircle {
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottomCircle {
+    bottom: 50px;
+    left: -50px;
+}
+
+.content {
+    position: absolute;
+    background: red;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0;
+    align-items: center;
+}
+
+.footer {
+    margin-bottom: 80px;
+    max-width: 200px;
+    text-align: center;
+}

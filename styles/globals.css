@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
+  height: 100%;
 }
 
 a {
@@ -14,4 +15,9 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+#__next,
+#app {
+  height: 100%;
 }
