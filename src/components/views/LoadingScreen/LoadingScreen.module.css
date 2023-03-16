@@ -15,9 +15,81 @@
 }
 
 .content {
-    @apply absolute bg-red-600 h-[80%] flex flex-col w-full justify-between p-0 items-center;
+    @apply absolute h-[80%] flex flex-col w-full justify-between pt-7 items-center;
+}
+
+.splashLogo {
+    @apply border border-green-500 font-inter text-[96px];
 }
 
 .footer {
-    @apply mb-20 max-w-[200px] text-center;
+    @apply mb-20 max-w-[200px] text-[16px] text-primary text-center;
+}
+
+.categoryWrapper{
+	@apply flex justify-center relative;
+}
+
+.animate:after{
+	@apply opacity-40;
+}
+
+.categoryWrapper button{
+	@apply absolute border-none w-[150px] text-[20px] p-0 m-0 outline-none z-10;
+}
+
+.categoryWrapper button span{
+	@apply block relative leading-10 cursor-pointer h-[150px];
+}
+
+.categoryWrapper button > span:after,
+.categoryWrapper button > span:before {
+	@apply absolute top-0 w-[20px] h-0 border-8 border-primary border-b-0;
+	content:'';
+	transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+
+.categoryWrapper button > span:after {
+	@apply left-[50%] border-l-0 ;
+}
+
+.categoryWrapper button > span:before{
+	@apply right-[50%] border-r-0;
+}
+
+.animate button > span:after,
+.animate button > span:before {
+	width: calc(50% - 0px);
+	height: calc(100% - 5px);
+	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+
+.categoryWrapper button > span > span:before,
+.categoryWrapper button > span > span:after {
+	content:'';
+	@apply absolute bottom-0 w-1 h-1 opacity-0;
+}
+
+.categoryWrapper button > span > span:before{
+	@apply right-0;
+}
+
+.categoryWrapper button > span > span:after{
+	@apply left-0;
+}
+
+.animate button > span > span:before,
+.animate button > span > span:after {
+	@apply opacity-100 border-b-8 border-primary h-[15px];
+	width: calc(50%);
+	transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}
+
+.categoryWrapper button > span > span > span{
+	@apply flex justify-center items-center text-transparent font-bold text-[56px];
+	transition: color 0.15s ease-out 0.3s;
+}
+
+.animate button > span > span > span{
+	@apply text-primary;
 }

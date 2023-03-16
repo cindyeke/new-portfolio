@@ -4,10 +4,12 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Montserrat", "sans-serif"],
+      inter: ["Inter", "sans-serif"],
     },
     extend: {
       colors: {
         "off-white": "#f5f5f5",
+        primary: "#866961",
       },
     },
   },

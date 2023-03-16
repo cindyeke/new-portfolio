@@ -6,8 +6,8 @@ const Home = () => {
 
   const showLoadingScreen = () => {
     setTimeout(() => {
-      setIsLoadingScreen(true);
-    }, [2000]);
+      setIsLoadingScreen(false);
+    }, [7000]);
   };
 
   useEffect(() => {
