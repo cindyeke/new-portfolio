@@ -1,5 +1,13 @@
 .root {
-    @apply h-full relative flex items-end bg-off-white;
+	@apply flex justify-center h-full bg-off-white;
+}
+
+.wrapper {
+    @apply h-full relative flex items-end container;
+}
+
+.wrapper {
+	@apply container;
 }
 
 .circle {
@@ -8,10 +16,12 @@
 
 .topCircle {
     @apply top-[10%] left-[50%] transform -translate-x-1/2 -translate-y-1/2;
+	@apply md:translate-x-0 md:translate-y-0 md:top-auto md:bottom-[20%] md:left-auto md:right-[10%];
 }
 
 .bottomCircle {
     @apply bottom-12 -left-12;
+	@apply md:bottom-auto md:top-[10%] md:left-[5%];
 }
 
 .content {
@@ -26,7 +36,7 @@
     @apply mb-20 max-w-[200px] text-[16px] text-primary text-center;
 }
 
-.categoryWrapper{
+.logoWrapper{
 	@apply flex justify-center relative;
 }
 
@@ -34,26 +44,26 @@
 	@apply opacity-40;
 }
 
-.categoryWrapper button{
-	@apply absolute border-none w-[150px] text-[20px] p-0 m-0 outline-none z-10;
+.logoWrapper button{
+	@apply absolute border-none w-[150px] p-0 m-0 outline-none z-10;
 }
 
-.categoryWrapper button span{
-	@apply block relative leading-10 cursor-pointer h-[150px];
+.logoWrapper button span{
+	@apply block relative h-[150px];
 }
 
-.categoryWrapper button > span:after,
-.categoryWrapper button > span:before {
+.logoWrapper button > span:after,
+.logoWrapper button > span:before {
 	@apply absolute top-0 w-[20px] h-0 border-8 border-primary border-b-0;
 	content:'';
 	transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
 }
 
-.categoryWrapper button > span:after {
+.logoWrapper button > span:after {
 	@apply left-[50%] border-l-0 ;
 }
 
-.categoryWrapper button > span:before{
+.logoWrapper button > span:before{
 	@apply right-[50%] border-r-0;
 }
 
@@ -64,17 +74,17 @@
 	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
 }
 
-.categoryWrapper button > span > span:before,
-.categoryWrapper button > span > span:after {
+.logoWrapper button > span > span:before,
+.logoWrapper button > span > span:after {
 	content:'';
 	@apply absolute bottom-0 w-1 h-1 opacity-0;
 }
 
-.categoryWrapper button > span > span:before{
+.logoWrapper button > span > span:before{
 	@apply right-0;
 }
 
-.categoryWrapper button > span > span:after{
+.logoWrapper button > span > span:after{
 	@apply left-0;
 }
 
@@ -85,7 +95,7 @@
 	transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
 }
 
-.categoryWrapper button > span > span > span{
+.logoWrapper button > span > span > span{
 	@apply flex justify-center items-center text-transparent font-bold text-[56px];
 	transition: color 0.15s ease-out 0.3s;
 }
