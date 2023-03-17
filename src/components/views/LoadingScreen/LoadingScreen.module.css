@@ -1,0 +1,105 @@
+.root {
+	@apply flex justify-center h-full bg-off-white;
+}
+
+.wrapper {
+    @apply h-full relative flex items-end container;
+}
+
+.wrapper {
+	@apply container;
+}
+
+.circle {
+    @apply h-[15%] w-fit absolute;
+}
+
+.topCircle {
+    @apply top-[10%] left-[50%] transform -translate-x-1/2 -translate-y-1/2;
+	@apply md:translate-x-0 md:translate-y-0 md:top-auto md:bottom-[20%] md:left-auto md:right-[10%];
+}
+
+.bottomCircle {
+    @apply bottom-12 -left-12;
+	@apply md:bottom-auto md:top-[10%] md:left-[5%];
+}
+
+.content {
+    @apply absolute h-[80%] flex flex-col w-full justify-between pt-7 items-center;
+}
+
+.splashLogo {
+    @apply border border-green-500 font-inter text-[96px];
+}
+
+.footer {
+    @apply mb-20 max-w-[200px] text-[16px] text-primary text-center;
+}
+
+.logoWrapper{
+	@apply flex justify-center relative;
+}
+
+.animate:after{
+	@apply opacity-40;
+}
+
+.logoWrapper button{
+	@apply absolute border-none w-[150px] p-0 m-0 outline-none z-10;
+}
+
+.logoWrapper button span{
+	@apply block relative h-[150px];
+}
+
+.logoWrapper button > span:after,
+.logoWrapper button > span:before {
+	@apply absolute top-0 w-[20px] h-0 border-8 border-primary border-b-0;
+	content:'';
+	transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+
+.logoWrapper button > span:after {
+	@apply left-[50%] border-l-0 ;
+}
+
+.logoWrapper button > span:before{
+	@apply right-[50%] border-r-0;
+}
+
+.animate button > span:after,
+.animate button > span:before {
+	width: calc(50% - 0px);
+	height: calc(100% - 5px);
+	transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+
+.logoWrapper button > span > span:before,
+.logoWrapper button > span > span:after {
+	content:'';
+	@apply absolute bottom-0 w-1 h-1 opacity-0;
+}
+
+.logoWrapper button > span > span:before{
+	@apply right-0;
+}
+
+.logoWrapper button > span > span:after{
+	@apply left-0;
+}
+
+.animate button > span > span:before,
+.animate button > span > span:after {
+	@apply opacity-100 border-b-8 border-primary h-[15px];
+	width: calc(50%);
+	transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}
+
+.logoWrapper button > span > span > span{
+	@apply flex justify-center items-center text-transparent font-bold text-[56px];
+	transition: color 0.15s ease-out 0.3s;
+}
+
+.animate button > span > span > span{
+	@apply text-primary;
+}
