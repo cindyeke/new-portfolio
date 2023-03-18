@@ -1,0 +1,24 @@
+.root {
+    @apply mt-3 text-text;
+}
+
+.regular {
+    @apply mr-1;
+    @apply xs:mr-2;
+}
+
+.bold {
+    @apply font-bold;
+}
+
+.regular, 
+.bold {
+    @apply text-[16px];
+    @apply xs:text-[24px];
+    @apply lg:text-[36px];
+    @apply 2xl:text-[56px];
+}
+
+.line {
+    @apply w-1/5 mt-1 ml-auto border-t-2 border-text;
+}

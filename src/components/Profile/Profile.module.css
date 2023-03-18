@@ -1,0 +1,35 @@
+.root {
+    @apply text-right flex flex-col items-end;
+    @apply xs:mt-5;
+    @apply lg:mt-0 lg:justify-center lg:mr-[30px] lg:flex-1;
+    @apply xl:mr-[70px];
+    @apply 2xl:mr-[10%];
+}
+
+.description {
+    @apply w-11/12 mt-5 text-[12px] flex flex-col leading-[20px];
+    @apply xs:w-[85%] xs:text-[16px] xs:leading-[25px];
+    @apply md:w-1/2;
+    @apply lg:text-[18px] lg:w-[80%];
+    @apply 2xl:text-[28px] 2xl:leading-[40px];
+}
+
+.description span {
+    @apply mb-2;
+}
+
+.btnsWrapper {
+    @apply flex flex-col;
+    @apply xs:mt-4;
+    @apply lg:flex-row;
+}
+
+.resumeBtn {
+    @apply bg-primary text-white mb-4 mt-2;
+    @apply xs:mb-6;
+    @apply lg:mb-0 lg:mt-0 lg:mr-4;
+}
+
+.projectsBtn {
+    @apply border border-primary text-primary;
+}

@@ -1,0 +1,14 @@
+.root {
+    @apply flex justify-end;
+    @apply lg:w-[15%] lg:h-full lg:bg-secondary lg:items-center;
+    @apply 2xl:w-[10%];
+}
+
+.wrapper {
+    @apply flex justify-between w-40;
+    @apply lg:w-full lg:h-[40%] lg:flex-col lg:justify-between lg:items-center;
+}
+
+.icon {
+    @apply xs:w-9 xs:h-9;
+}

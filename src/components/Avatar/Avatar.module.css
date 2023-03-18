@@ -1,0 +1,22 @@
+.root {
+    @apply flex justify-end;
+    @apply lg:mt-0 lg:items-center lg:ml-[50px];
+    @apply xl:ml-[80px];
+    @apply 2xl:ml-[10%];
+}
+
+.imgWrapper {
+    @apply flex justify-center items-center h-32 w-32 rounded-full bg-secondary overflow-hidden;
+    @apply xs:h-44 xs:w-44;
+    @apply lg:h-56 lg:w-56 lg:mt-[-50px];
+    @apply xl:h-72 xl:w-72;
+    @apply 2xl:h-96 2xl:w-96;
+}
+
+.img {
+    @apply rounded-full mt-7 w-28 h-28;
+    @apply xs:h-32 xs:w-32 xs:mt-14;
+    @apply lg:w-44 lg:h-44 lg:mt-16;
+    @apply xl:h-52 xl:w-52 xl:mt-24;
+    @apply 2xl:h-72 2xl:w-72 2xl:mt-36;
+}
