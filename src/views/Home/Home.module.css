@@ -1,0 +1,38 @@
+.root {
+    @apply flex justify-center;
+    @apply md:items-center md:h-full;
+    @apply lg:block;
+}
+
+.wrapper {
+    @apply h-full relative;
+    @apply md:h-auto;
+    @apply lg:h-full;
+}
+
+.circle {
+    @apply h-[15%] w-fit absolute;
+}
+
+.topCircle {
+    @apply top-[-14px] left-[-20px];
+	@apply md:top-auto md:bottom-[12%] md:left-auto md:right-[32%];
+    @apply lg:bottom-auto lg:right-[10%] lg:top-[5%];
+}
+
+.bottomCircle {
+    @apply bottom-0 -left-12;
+	@apply md:top-[10%] md:left-[5%];
+    @apply lg:top-auto lg:bottom-[5%] lg:left-[30%];
+}
+
+.contentWrapper {
+    @apply h-full p-[30px];
+    @apply md:px-[60px];
+    @apply lg:p-0 lg:flex;
+}
+
+.avatarRoot {
+    @apply mt-5;
+    @apply xs:mt-8;
+}

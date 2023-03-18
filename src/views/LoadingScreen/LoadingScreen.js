@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Circles1 from "@/public/images/circles-1.svg";
-import Circles2 from "@/public/images/circles-2.svg";
+import Circles1 from "@/public/svgs/circles-1.svg";
+import Circles2 from "@/public/svgs/circles-2.svg";
 import styles from "./LoadingScreen.module.css";
 
 const LoadingScreen = () => {

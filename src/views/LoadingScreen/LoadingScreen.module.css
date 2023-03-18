@@ -6,10 +6,6 @@
     @apply h-full relative flex items-end container;
 }
 
-.wrapper {
-	@apply container;
-}
-
 .circle {
     @apply h-[15%] w-fit absolute;
 }

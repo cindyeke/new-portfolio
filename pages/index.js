@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import LoadingScreen from "@/src/components/views/LoadingScreen/LoadingScreen";
+import LoadingScreen from "@/src/views/LoadingScreen/LoadingScreen";
+import Home from "@/src/views/Home/Home";
 
-const Home = () => {
-  const [isLoadingScreen, setIsLoadingScreen] = useState(true);
+const App = () => {
+  const [isLoadingScreen, setIsLoadingScreen] = useState(false);
 
   const showLoadingScreen = () => {
     setTimeout(() => {
@@ -18,7 +19,7 @@ const Home = () => {
     return <LoadingScreen />;
   }
 
-  return <div>Home</div>;
+  return <Home />;
 };
 
-export default Home;
+export default App;
