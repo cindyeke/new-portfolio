@@ -1,5 +1,5 @@
 .btn {
-    @apply px-10 py-2 text-[12px] lowercase;
+    @apply px-10 py-2 text-[12px] lowercase flex items-center;
     @apply xs:text-[16px] xs:px-14 xs:py-3;
     @apply lg:py-2 lg:text-[18px];
     @apply 2xl:text-[28px];
