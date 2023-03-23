@@ -1,6 +1,9 @@
+import Image from "next/image";
 import Title from "@/src/components/Title/Title";
 import Button from "@/src/components/Button/Button";
+import DownloadIcon from "@/public/svgs/download.svg";
 import { PROFILE_TITLE } from "@/src/constants";
+import { downloadResume } from "@/src/helpers";
 import styles from "./Profile.module.css";
 
 const Profile = () => {
@@ -15,7 +18,16 @@ const Profile = () => {
         </span>
       </div>
       <div className={styles.btnsWrapper}>
-        <Button label="my resume" buttonClass={styles.resumeBtn} />
+        {/* <a href="../../../public/pdfs/resume.pdf" download> */}
+        <Button label="my resume" buttonClass={styles.resumeBtn} download={downloadResume}>
+          <Image
+            src={DownloadIcon}
+            className={`${styles.download}`}
+            alt="download"
+            priority
+          />
+        </Button>
+        {/* </a> */}
         <Button label="view projects" buttonClass={styles.projectsBtn} />
       </div>
     </div>

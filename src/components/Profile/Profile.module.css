@@ -28,8 +28,24 @@
     @apply bg-primary text-white mb-4 mt-2;
     @apply xs:mb-6;
     @apply lg:mb-0 lg:mt-0 lg:mr-4;
+    @apply outline outline-primary transform;
+    @apply hover:bg-transparent hover:text-primary;
+}
+
+.resumeBtn img {
+    @apply ml-0 opacity-0;
+}
+
+.resumeBtn:hover img {
+    @apply ml-3 opacity-100;
+}
+
+.resumeBtn,
+.resumeBtn img,
+.resumeBtn:hover img {
+    @apply transition-all duration-300 ease-in-out;
 }
 
 .projectsBtn {
-    @apply border border-primary text-primary;
+    @apply outline outline-primary text-primary hover:bg-primary hover:text-white;
 }
